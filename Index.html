@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cafe - প্রফেশনাল ওয়েবসাইট</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+body{line-height:1.6;color:#333;}
+header{background:#8B4513;color:white;padding:20px 0;position:sticky;top:0;z-index:100;}
+header h1{text-align:center;font-size:2.5rem;}
+nav{text-align:center;margin-top:10px;}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:bold;transition:0.3s;}
+nav a:hover{color:#FFD700;}
+.hero{position:relative;height:80vh;overflow:hidden;display:flex;align-items:center;justify-content:center;background-image:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe');background-size:cover;background-position:center;}
+.hero-text{text-align:center;color:white;text-shadow:2px 2px 10px rgba(0,0,0,0.7);}
+.hero-text h2{font-size:3rem;margin-bottom:10px;}
+.hero-text p{font-size:1.2rem;}
+
+/* Sections */
+.section{padding:60px 20px;text-align:center;}
+.section h2{font-size:2.2rem;color:#8B4513;margin-bottom:30px;}
+
+/* Menu */
+.menu-items{display:flex;flex-wrap:wrap;justify-content:center;gap:25px;}
+.menu-card{background:#fdf5e6;border-radius:15px;padding:20px;width:280px;transition:0.3s;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+.menu-card:hover{transform:translateY(-10px);box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+.menu-card img{width:100%;border-radius:15px;margin-bottom:15px;}
+.menu-card h3{margin-bottom:10px;}
+
+/* Contact Form */
+form{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:15px;}
+input,textarea{padding:12px;border-radius:8px;border:1px solid #ccc;font-size:1rem;}
+button{padding:12px;background:#8B4513;color:white;border:none;font-size:1.1rem;border-radius:8px;cursor:pointer;transition:0.3s;}
+button:hover{background:#A0522D;}
+
+/* Footer */
+footer{background:#333;color:white;padding:30px 0;text-align:center;}
+.social a{margin:0 10px;color:white;text-decoration:none;font-size:1.5rem;transition:0.3s;}
+.social a:hover{color:#FFD700;}
+
+/* Responsive */
+@media(max-width:768px){
+    .menu-items{flex-direction:column;align-items:center;}
+    .hero-text h2{font-size:2rem;}
+    .hero-text p{font-size:1rem;}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>My Cafe</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h2>স্বাগতম আমাদের ক্যাফেতে</h2>
+        <p>সুস্বাদু কফি, হালকা খাবার এবং আরামদায়ক পরিবেশ</p>
+    </div>
+</section>
+
+<section class="section" id="menu">
+    <h2>আমাদের মেনু</h2>
+    <div class="menu-items">
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Coffee">
+            <h3>কফি</h3>
+            <p>সুস্বাদু হট ও আইসড কফি</p>
+        </div>
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1601924571245-3c2a8f9e49c5" alt="Cake">
+            <h3>কেক</h3>
+            <p>ফ্রেশ বেকড কেক</p>
+        </div>
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Sandwich">
+            <h3>স্যান্ডউইচ</h3>
+            <p>দুপুরের জন্য হালকা খাবার</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>আমাদের ক্যাফে হল একটি শান্ত, আরামদায়ক জায়গা যেখানে আপনি সুস্বাদু কফি, হালকা খাবার এবং আরামদায়ক পরিবেশ উপভোগ করতে পারবেন। আমরা সর্বদা পরিষ্কার এবং মানসম্পন্ন পরিষেবা দেওয়ার চেষ্টা করি।</p>
+</section>
+
+<section class="section" id="contact">
+    <h2>যোগাযোগ করুন</h2>
+    <!-- Formspree Form -->
+    <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="আপনার নাম" required>
+        <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+        <textarea name="message" rows="5" placeholder="আপনার বার্তা" required></textarea>
+        <button type="submit">পাঠান</button>
+    </form>
+</section>
+<<section class="section" id="contact">
+    <h2>যোগাযোগ করুন</h2>
+
+    </button>
+    </form>
+</section>
+
+<footer>
+    <p>📞 ফোন: <a href="tel:+919876543210">+91 9876543210</a> | 
+       📧 ইমেইল: <a href="mailto:info@mycafe.com">info@mycafe.com</a></p>
+    <p>&copy; 2026 My Cafe. All Rights Reserved.</p>
+</footer>
+
+    <p>&copy; 2026 My Cafe. All Rights Reserved.</p>
+    <div class="social">
+        <a href="#" target="_blank">FB</a>
+        <a href="#" target="_blank">IG</a>
+        <a href="#" target="_blank">TG</a>
+    </div>
+</footer>
+
+</body>
+</html>
